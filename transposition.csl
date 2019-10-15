@@ -62,8 +62,9 @@
   </macro>
   <macro name="translator">
     <names variable="translator">
-      <name form="long" and="text" delimiter-precedes-last="never" delimiter="" sort-separator=" " font-style="normal" prefix=" trad. " name-as-sort-order="all">
-        <name-part name="family" font-variant="small-caps"/>
+      <name form="long" and="text" delimiter-precedes-last="never" sort-separator=" " font-style="normal" name-as-sort-order="all">
+        <!-- <name-part name="family" font-variant="small-caps"/> -->
+	<label form="short" prefix="&#160;(" suffix=".)"/>
       </name>
     </names>
   </macro>
@@ -176,7 +177,6 @@
 	    </else-if>
           </choose>
         </group>
-
       </else-if>
       <else-if type="article-newspaper article-magazine" match="any">
         <group delimiter=" " font-style="normal">
@@ -188,18 +188,18 @@
           <group delimiter=" " font-style="normal">
             <choose>
               <if variable="locator" match="any">
-                <group delimiter="&#8239;">
+		<group delimiter="&#8239;">
                   <label variable="locator" form="short"/>
                   <text variable="locator"/>
-                </group>
-              </if>
-              <else-if variable="locator" match="none">
-                <label variable="page" form="short"/>
-		<text variable="page"/>
-              </else-if>
+		</group>
+            </if>
+            <else-if variable="page" match="any">
+              <label variable="page" form="short"/>
+	      <text variable="page"/>
+            </else-if>
             </choose>
           </group>
-        </group>
+	</group>
       </else-if>
       <else-if type="webpage" match="any">
         <group delimiter=" " font-style="normal">
