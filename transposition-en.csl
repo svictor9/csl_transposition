@@ -84,7 +84,6 @@
       <else-if type="chapter entry-dictionary entry-encyclopedia" match="any">
         <group>
           <text variable="title" text-case="capitalize-first" quotes="true" suffix=","/>
-          <text value="in" font-style="italic" suffix=" " prefix=" "/>
           <text macro="editor" suffix=", "/>
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
         </group>
