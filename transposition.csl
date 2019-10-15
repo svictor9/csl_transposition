@@ -78,6 +78,11 @@
         <group delimiter=", ">
           <text variable="title" text-case="capitalize-first" quotes="true" font-style="normal"/>
           <text variable="container-title" font-style="italic"/>
+	  <choose>
+	    <if type="article-newspaper article-magazine" match="any">
+	      <text variable="URL" text-decoration="underline" />
+	    </if>
+	  </choose>
         </group>
       </else-if>
       <else-if type="thesis" match="any">
@@ -100,13 +105,7 @@
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
-        <group>
-          <text variable="title" text-case="capitalize-first" font-style="italic" suffix=", "/>
-          <text variable="URL" text-decoration="underline"/>
-        </group>
-      </else-if>
-      <else-if type="post-weblog" match="any">
+      <else-if type="post-weblog webpage" match="any">
         <group delimiter=", ">
           <text variable="title" text-case="capitalize-first" font-style="italic" />
           <text variable="URL" text-decoration="underline"/>
@@ -225,7 +224,7 @@
           </date>
         </group>
       </else-if>
-      <else-if type="post-weblog" match="any">
+      <else-if type="post-weblog webpage article-magazine article-newspaper" match="any">
       	<choose>
 	  <if variable="accessed" match="any">
 	    <group delimiter=" " font-style="normal">
