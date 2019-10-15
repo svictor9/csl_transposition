@@ -106,8 +106,16 @@
           <text variable="URL" text-decoration="underline"/>
         </group>
       </else-if>
+      <else-if type="post-weblog" match="any">
+        <group delimiter=", ">
+          <text variable="title" text-case="capitalize-first" font-style="italic" />
+          <text variable="URL" text-decoration="underline"/>
+        </group>
+      </else-if>
       <else>
-        <text variable="title" quotes="true"/>
+	<group>
+          <text variable="title" quotes="true"/>
+	</group>
       </else>
     </choose>
   </macro>
@@ -216,6 +224,19 @@
             <date-part name="year"/>
           </date>
         </group>
+      </else-if>
+      <else-if type="post-weblog" match="any">
+      	<choose>
+	  <if variable="accessed" match="any">
+	    <group delimiter=" " font-style="normal">
+	      <date variable="accessed" form="text" prefix="consulté le ">
+		<date-part name="day"/>
+		<date-part name="month"/>
+		<date-part name="year"/>
+	      </date>
+	    </group>
+	  </if>
+	</choose>
       </else-if>
     </choose>
   </macro>
