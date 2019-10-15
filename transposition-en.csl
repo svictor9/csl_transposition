@@ -225,22 +225,20 @@
       <else-if type="article-journal article-magazine" match="any">
 	<choose>
 	  <if variable="volume issue" match="any">
-            <group font-style="normal" suffix=", ">
-              <choose>
-		<if variable="volume issue">
-		  <text variable="volume" prefix=" "/>
-		  <text variable="issue" prefix="-"/>
+            <group font-style="normal" delimiter=", " suffix=", ">
+	      <choose>
+		<if variable="volume">
+		  <text variable="volume" prefix="vol.&amp;#160;"/>
 		</if>
-		<else-if variable="volume">
-		  <text variable="volume" prefix=" "/>
-		</else-if>
-		<else-if variable="issue">
-		  <text variable="issue" prefix=" "/>
-		</else-if>
+	      </choose>
+	      <choose>
+		<if variable="issue">
+		  <text variable="issue" prefix="no.&amp;#160;"/>
+		</if>
 	      </choose>
 	    </group>
 	  </if>
-          </choose>
+        </choose>
           <choose>
             <if variable="issued">
 	      <group font-style="normal">
