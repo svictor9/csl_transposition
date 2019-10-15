@@ -195,6 +195,7 @@
               </if>
               <else-if variable="locator" match="none">
                 <label variable="page" form="short"/>
+		<text variable="page"/>
               </else-if>
             </choose>
           </group>
