@@ -32,7 +32,7 @@
   </macro>
   <macro name="author-short">
     <names variable="author">
-      <name form="long" and="text" initialize-with=". " sort-separator=" " delimiter-precedes-last="never" name-as-sort-order="all">
+      <name form="short" and="text" initialize-with=". " sort-separator=" " delimiter-precedes-last="never" name-as-sort-order="all">
         <name-part name="family" font-variant="small-caps"/>
       </name>
       <label form="short" prefix="&amp;#160;(" suffix=")"/>
