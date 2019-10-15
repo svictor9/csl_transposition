@@ -52,7 +52,7 @@
   <macro name="translator">
     <names variable="translator">
       <name form="long" and="text" delimiter-precedes-last="never" sort-separator=" " font-style="normal" name-as-sort-order="all">
-        <!-- <name-part name="family" font-variant="small-caps"/> -->
+        <name-part name="family" font-variant="small-caps"/>
 	<label form="short" prefix="&#160;(" suffix=".)"/>
       </name>
     </names>
