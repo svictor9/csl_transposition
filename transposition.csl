@@ -62,7 +62,7 @@
   </macro>
   <macro name="translator">
     <names variable="translator">
-      <name form="long" and="text" delimiter-precedes-last="never" delimiter="" sort-separator=" " font-style="normal" prefix=" trad. fr. " name-as-sort-order="all">
+      <name form="long" and="text" delimiter-precedes-last="never" delimiter="" sort-separator=" " font-style="normal" prefix=" trad. " name-as-sort-order="all">
         <name-part name="family" font-variant="small-caps"/>
       </name>
     </names>
