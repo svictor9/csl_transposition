@@ -19,6 +19,9 @@
   </info>
   <locale xml:lang="en">
     <style-options punctuation-in-quote="false"/>
+    <terms>
+      <term name="page-range-delimiter">-</term>
+    </terms>
   </locale>
   <macro name="author">
     <names variable="author">

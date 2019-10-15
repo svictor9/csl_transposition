@@ -26,6 +26,7 @@
       <term name="cited">op.&amp;#160;cit.</term>
       <term name="page" form="short">p.</term>
       <term name="editor" form="short">dir.</term>
+      <term name="page-range-delimiter">-</term>
     </terms>
   </locale>
   <macro name="author">
