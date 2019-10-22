@@ -4,14 +4,14 @@
     <title>Transposition Musique et sciences sociales (English)</title>
     <id>http://www.zotero.org/styles/transposition-en</id>
     <link href="http://www.zotero.org/styles/transposition-en" rel="self"/>
-    <link href="https://journals.openedition.org/transposition/1021" rel="documentation"/>
+    <link href="https://journals.openedition.org/transposition/1016" rel="documentation"/>
     <author>
       <name>Victor A. Stoichita</name>
       <email>victor.stoichita@cnrs.fr</email>
     </author>
     <category citation-format="note"/>
     <category field="social_science"/>
-    <!-- <eissn>2110-6134</eissn> -->
+    <eissn>2110-6134</eissn>
     <summary>Style based on http://www.zotero.org/styles/annales by Franziska Heimburger.</summary>
     <updated>2019-07-16T12:00:59+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
@@ -58,8 +58,8 @@
     <names variable="translator">
       <name form="long" and="text" delimiter-precedes-last="never" sort-separator=" " font-style="normal" name-as-sort-order="all">
         <name-part name="family" font-variant="small-caps"/>
-	<label form="short" prefix="&amp;#160;(" suffix=".)"/>
       </name>
+      <label form="short" prefix="&amp;#160;(" suffix=".)" />
     </names>
   </macro>
   <macro name="title">
@@ -169,7 +169,7 @@
 	</group>
       </else-if>
       <else-if type="article-journal" match="any">
-	<group delimiter="&amp;#160;" font-style="normal">
+        <group delimiter="&amp;#160;" font-style="normal">
 	  <choose>
             <if variable="locator" match="any">
               <group delimiter="&amp;#160;">
